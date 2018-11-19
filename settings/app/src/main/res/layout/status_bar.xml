@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/current_system_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/bg_gps"
+        android:text="16:24"
+        android:textColor="@color/textSelect" />
+
+    <ImageView
+        android:id="@+id/bg_disk"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/udisk"
+        />
+
+    <ImageView
+        android:id="@+id/bg_bluetooth"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/bg_disk"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bluetooth"/>
+
+    <ImageView
+        android:id="@+id/bg_nevigation"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/bg_bluetooth"
+        android:background="@drawable/navigation"/>
+    <ImageView
+        android:id="@+id/bg_singal"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/bg_nevigation"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/signal"/>
+    <ImageView
+        android:id="@+id/bg_gps"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/bg_singal"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/gps"/>
+
+
+
+</RelativeLayout>
