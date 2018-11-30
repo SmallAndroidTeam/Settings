@@ -319,11 +319,12 @@
 
         </RelativeLayout>
     </RelativeLayout>
+
     <FrameLayout
 
-        android:layout_alignParentRight="true"
         android:id="@+id/mainFragment"
         android:layout_width="2100px"
-        android:layout_height="match_parent">
-    </FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"></FrameLayout>
 </RelativeLayout>

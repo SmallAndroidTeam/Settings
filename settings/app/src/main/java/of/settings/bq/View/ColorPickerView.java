@@ -1,4 +1,4 @@
-package of.settings.bq.View;
+package of.settings.bq.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

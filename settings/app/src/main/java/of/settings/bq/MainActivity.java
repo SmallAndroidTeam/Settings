@@ -21,12 +21,12 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import of.settings.bq.Fragment.AmbientLightFragment;
-import of.settings.bq.Fragment.AromatherapyFragment;
-import of.settings.bq.Fragment.BlueToothFragment;
-import of.settings.bq.Fragment.BrightnessFragment;
-import of.settings.bq.Fragment.VoiceFragment;
-import of.settings.bq.Fragment.WiFiFragment;
+import of.settings.bq.fragment.AmbientLightFragment;
+import of.settings.bq.fragment.AromatherapyFragment;
+import of.settings.bq.fragment.BluetoothFragment;
+import of.settings.bq.fragment.BrightnessFragment;
+import of.settings.bq.fragment.VoiceFragment;
+import of.settings.bq.fragment.WiFiFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initShowFragment() {
-        aromatherapyTv.callOnClick();
+        wifiTv.callOnClick();
     }
 
     //设置view透明度变化
@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 wifiLayout.setVisibility(View.INVISIBLE);
                 returnRelativeLayout.setVisibility(View.INVISIBLE);
                 if(bluetoothFragment==null){
-                    bluetoothFragment=new BlueToothFragment();
+                    bluetoothFragment=new BluetoothFragment();
                     fragmentTransaction.add(R.id.mainFragment,bluetoothFragment);
                 }else{
                     fragmentTransaction.show(bluetoothFragment);

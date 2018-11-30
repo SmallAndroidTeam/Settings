@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1080" >
+    <!-- android:weightSum="720" > -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="360" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="104" >
+
+        <include layout="@layout/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="616"
+        android:orientation="horizontal"
+        android:weightSum="2100" >
+
+        <ImageView
+            android:id="@+id/wifi_connect_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="178"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bw_back"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bw_divider2" />
+
+        <!--  Saved List layout -->
+        <LinearLayout
+            android:id="@+id/wifi_connect_saved_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="538"
+            android:orientation="vertical"
+            android:weightSum="616">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:textSize="@dimen/bwSmallTextSize"
+                android:textColor="@color/bw_text_title"
+                android:text="@string/wifi_saved"
+                android:gravity="center"
+                />
+
+            <ListView
+                android:id="@+id/wifi_connect_saved_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="461"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <!--  Searched List layout -->
+        <LinearLayout
+            android:id="@+id/wifi_connect_searched_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="538"
+            android:orientation="vertical"
+            android:weightSum="616">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:textSize="@dimen/bwSmallTextSize"
+                android:textColor="@color/bw_text_title"
+                android:text="@string/wifi_searched"
+                android:gravity="center"
+                />
+
+            <ListView
+                android:id="@+id/wifi_connect_searched_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="461"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="55"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bw_divider1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1020"
+            android:orientation="horizontal"
+            android:weightSum="1020" >
+
+            <LinearLayout
+                android:id="@+id/wifi_connect_info_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1020"
+                android:orientation="vertical"
+                android:weightSum="616">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/wifi_connect_ssid"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:textSize="@dimen/bwSmallTextSize"
+                    android:textColor="@color/bw_text_title"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/wifi_connect_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:textSize="@dimen/bwBigTextSize"
+                    android:textColor="@color/bw_text_main"
+                    android:gravity="center"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="200"
+                    android:visibility="invisible"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="78"
+                    android:layout_marginHorizontal="100px"
+                    android:orientation="horizontal"
+                    android:weightSum="540" >
+
+                    <Button
+                        android:id="@+id/wifi_connect_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textSize="@dimen/bwTextSize"
+                        android:textColor="@color/bw_text_main"
+                        android:background="@drawable/bw_button_bg"
+                        android:scaleType="fitCenter"
+                        />
+
+                    <Button
+                        android:id="@+id/wifi_connect_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/wifi_cancel"
+                        android:textSize="@dimen/bwTextSize"
+                        android:textColor="@color/bw_text_main"
+                        android:background="@drawable/bw_button_bg"
+                        android:scaleType="fitCenter"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="55"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wifi_connect_keyboard_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1020"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="616">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:visibility="invisible"/>
+
+                <EditText
+                    android:id="@+id/wifi_connect_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:textSize="@dimen/bwTextSize"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bw_text_main"
+                    />
+
+                <android.inputmethodservice.KeyboardView
+                    android:id="@+id/wifi_keyboard_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="461"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@color/bw_all_transparent"
+                    android:keyBackground="@drawable/bw_keyboard_key"
+                    android:keyTextSize="@dimen/bwMiddleTextSize"
+                    android:keyTextColor="@color/bw_text_main"
+                    android:keyPreviewLayout="@layout/bw_preview_keyboard"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="55"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="360"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bw_wifi_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>

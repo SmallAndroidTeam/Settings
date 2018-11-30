@@ -1,4 +1,4 @@
-package of.settings.bq.Dialog;
+package of.settings.bq.dialog;
 
 import android.app.Dialog;
 import android.content.Context;

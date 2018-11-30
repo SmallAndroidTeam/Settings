@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Settings</string>
+
+    <!-- Used by WiFi -->
+    <string name="wifi_tips">WIFI开关</string>
+    <string name="wifi_opened">WIFI已打开</string>
+    <string name="wifi_opening">WIFI正在打开...</string>
+    <string name="wifi_closed">WIFI已关闭</string>
+    <string name="wifi_closing">WIFI正在关闭...</string>
+    <string name="wifi_saved">已保存的WIFI</string>
+    <string name="wifi_searched">当前搜索到的WIFI</string>
+    <string name="wifi_connect_tip">是否连接当前网络</string>
+    <string name="wifi_disconnect_tip">是否断开当前网络连接</string>
+    <string name="wifi_delete_tip">是否删除当前网络</string>
+    <string name="wifi_connect">连接</string>
+    <string name="wifi_disconnect">断开</string>
+    <string name="wifi_delete">删除</string>
+    <string name="wifi_cancel">取消</string>
+
+    <!-- Used by BT -->
+    <string name="bt_tips">蓝牙开关</string>
+    <string name="bt_opened">蓝牙已打开</string>
+    <string name="bt_opening">蓝牙正在打开...</string>
+    <string name="bt_closed">蓝牙已关闭</string>
+    <string name="bt_closing">蓝牙正在关闭...</string>
+    <string name="bt_saved">我的设备</string>
+    <string name="bt_searched">当前搜索到的蓝牙</string>
+    <string name="bt_bond_tip">是否绑定</string>
+    <string name="bt_remove_tip">是否删除当前蓝牙</string>
+    <string name="bt_bond">绑定</string>
+    <string name="bt_remove">删除</string>
+    <string name="bt_cancel">取消</string>
+
 </resources>

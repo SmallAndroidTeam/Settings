@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Used by BT and WiFi-->
+    <dimen name="bwSmallTextSize">32px</dimen>
+    <dimen name="bwTextSize">36px</dimen>
+    <dimen name="bwMiddleTextSize">40px</dimen>
+    <dimen name="bwBigTextSize">48px</dimen>
+
+    <dimen name="key_height">50.0dip</dimen>
+
+</resources>

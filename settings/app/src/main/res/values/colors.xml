@@ -11,4 +11,19 @@
     <color name="transparent">#00000000</color>
     <color name="dialog">#ffff</color>
     <color name="white_1">#a3aeac</color>
+
+    <!-- Used by BT and WiFi -->
+    <color name="bw_all_transparent">#00000000</color>
+    <color name="bw_half_transparent">#80000000</color>
+    <color name="bw_underline">#ff2a4462</color>
+
+    <color name="bw_keyboard">#ff2E4D67</color>
+    <color name="bw_keyboard_pressed">#ff006eac</color>
+    #
+
+    <color name="bw_text_title">#4Dffffff</color>
+    <color name="bw_text_main">#ffffffff</color>
+    <color name="bw_text_normal">#80ffffff</color>
+    <color name="bw_text_status">#807aff7a</color>
+
 </resources>

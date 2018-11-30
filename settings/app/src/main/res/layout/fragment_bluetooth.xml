@@ -65,12 +65,12 @@
                 android:layout_weight="80"
                 android:textSize="@dimen/bwSmallTextSize"
                 android:textColor="@color/bw_text_title"
-                android:text="@string/wifi_tips"
+                android:text="@string/bt_tips"
                 android:gravity="center"
                 />
 
             <TextView
-                android:id="@+id/wifi_status"
+                android:id="@+id/bt_status"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="80"
@@ -80,7 +80,7 @@
                 />
 
             <TextView
-                android:id="@+id/wifi_ssid"
+                android:id="@+id/bt_name"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="100"
@@ -96,7 +96,7 @@
                 android:visibility="invisible"/>
 
             <ImageButton
-                android:id="@+id/wifi_enabler"
+                android:id="@+id/bt_enabler"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="78"
@@ -147,12 +147,12 @@
                     android:layout_weight="80"
                     android:textSize="@dimen/bwSmallTextSize"
                     android:textColor="@color/bw_text_title"
-                    android:text="@string/wifi_saved"
+                    android:text="@string/bt_saved"
                     android:gravity="center"
                     />
 
                 <ListView
-                    android:id="@+id/wifi_saved_list"
+                    android:id="@+id/bt_saved_list"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="461"
@@ -184,7 +184,7 @@
                 android:src="@drawable/bw_divider1" />
 
             <LinearLayout
-                android:id="@+id/wifi_searched_layout"
+                android:id="@+id/bt_searched_layout"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="538"
@@ -203,12 +203,12 @@
                     android:layout_weight="80"
                     android:textSize="@dimen/bwSmallTextSize"
                     android:textColor="@color/bw_text_title"
-                    android:text="@string/wifi_searched"
+                    android:text="@string/bt_searched"
                     android:gravity="center"
                     />
 
                 <ListView
-                    android:id="@+id/wifi_searched_list"
+                    android:id="@+id/bt_searched_list"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="461"
@@ -230,7 +230,7 @@
             android:layout_weight="360"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
-            android:src="@drawable/bw_wifi_bg" />
+            android:src="@drawable/bw_bluetooth_bg" />
 
     </LinearLayout>
 
